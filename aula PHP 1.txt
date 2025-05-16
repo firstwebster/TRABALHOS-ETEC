@@ -1,0 +1,64 @@
+PHP
+
+PHP é uma linguagem que não necessita de um ambiente de desenvolvimento específico
+
+o naveador não interpreta código PHP
+
+precisa estar salvo no servidor web = apache 
+para traduzir a codificação php para uma linguagem que o navegador interprete
+
+XAMPP - CONJUNTO DE FERRAMENTAS (APACHE - MY SQL - FILEZILA - MERCURY - TOMCAT)
+
+
+ start no apache
+save as - disco C - (HTdocs = Servidor web)
+salva com .PHP
+
+navegador - localhost/nome da pasta/
+
+BAIXAR sublime text
+
+<?php
+	supertag
+
+  ?>       
+
+saida de tela = echo
+texto= string 
+; para finalizar a linha
+
+
+echo "Bem vindo";
+
+para utilizar variáveis 
+$+nome da variável
+não pode usar caracter especial nem no fim, nem no inicio
+ou número(2,3) antes da variável, apenas no fim.
+
+$número (de preferência em minúsculo)
+
+não precisa declarar o tipo da variável na criação
+o PHP interpreta o tipo automáticamente
+
+$numero = 2;
+$numero2 = 2.5;
+
+$soma= $numero+$numero2;
+$div=$numero/$numero2; //"/" é o símbolo para divisão//
+$mult=numero*$numero2; //* é usado para multiplicação//
+$sub=$numero-$$numero2;
+
+Usamos // texto // para fazer um comentário no código
+
+echo $soma; (exibe o resultado)
+echo "O resultado é $soma";
+dentro das aspas duplas mesmo, pq as aspas interpretam a variável e exibem o resultado da soma 
+'' aspas simples não interpretam a variável 
+
+
+echo "O resultado é $soma"<br>;
+echo "O resultado é $div"<br>;
+echo "O resultado é $mult"<br>;;12,111,3;1
+echo "O resultado é $sub"<br>        0;;2
+
+
