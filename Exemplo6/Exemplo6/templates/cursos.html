@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h2 style="text-align: center;">Lista de cursos cadastrados</h2>
+<hr/>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Código do Curso</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Carga Horária</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for curso in cursos %}
+        <tr>
+            <td>{{curso.id_curso}}</td>
+            <td>{{curso.nome}}</td>
+            <td>{{curso.descricao}}</td>
+            <td>{{curso.cargahoraria}}</td>
+            <td>
+                <a href="{{curso.id_curso}}/atualizar_curso" class="btn btn-secondary btn-xs">
+                    Editar
+                </a>
+                <a href="{{curso.id_curso}}/remover_curso" class="btn btn-danger btn-xs" 
+                    onclick="return confirm('Deseja realmente excluir este registro?')">
+                    Excluir
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+    <br/>
+    <a href="{{url_for('cadastrar_curso')}}" class="btn btn-success btn-xs">Cadastrar</a>
+{% endblock conteudo %}
